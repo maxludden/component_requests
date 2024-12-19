@@ -1,0 +1,33 @@
+[project]
+name = "component-requests"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Max Ludden", email = "dev@maxludden.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "beanie>=1.28.0",
+    "fastapi>=0.115.6",
+    "loguru-rich-sink>=0.0.1",
+    "motor>=3.6.0",
+    "pendulum>=3.0.0",
+    "pydantic>=2.10.4",
+    "python-dotenv[cli]>=1.0.1",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+ignore=[
+    "F401"
+]
+
+[tool.pyright]
+broad-exception-caught=false
+ignore=['W0718']
